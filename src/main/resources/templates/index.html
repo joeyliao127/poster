@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Style/style.css" />
+    <title>Home Page</title>
+  </head>
+  <body>
+    <h1>Poster</h1>
+    <main>
+      <section class="mainArea">
+        <form action="/api/upload" method="post" enctype="multipart/form-data">
+          <div>
+            <label for="msg">文字內容</label>
+            <input type="text" name="msg" id="msg" />
+          </div>
+          <div>
+            <label for="file">圖片</label>
+            <input type="file" name="file" id="file" />
+          </div>
+          <button>提交</button>
+        </form>
+        <div class="post-ctn">
+          <div class="post-item">
+            <img src="Img/天元宮02.jpg" alt="天元宮" />
+            <p>天元宮</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="js/index.js"></script>
+  </body>
+</html>
